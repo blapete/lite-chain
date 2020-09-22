@@ -1,6 +1,3 @@
-# first, create a hash function
-# will take 1 argument, a data field
-# generate unique hash value for whatever data comes in
 def lightning_hash(data):
   return data + '*'
 
@@ -32,10 +29,9 @@ foo_blockchain.add_block('two')
 foo_blockchain.add_block('three')
 
 
-#for loop that steps throught the blockchain, one block at a time
+
 for block in foo_blockchain.chain:
-  # debug the actual block
-  # instead of printing each attribute of a block, we are going to print out the blocks
-  # dictionary representation instead. this turns the block into a key-value collection of
-  # it's attributes ----> block.__dict__
+  # Print out the blocks dictionary representation
+  # This turns the block into a key-value collection of
+  # it's attributes ----> .__dict__
   print(block.__dict__)
