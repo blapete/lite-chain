@@ -1,1 +1,1 @@
-a lightning chain blockchain
+a blockchain
